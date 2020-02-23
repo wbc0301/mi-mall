@@ -15,8 +15,9 @@ export default {
       
     }
   },
+	
   mounted(){
-    if(this.$cookie.get('userId')){
+    if(this.$cookie.get('userId')){ // 没登录就不发请求，比老师的方法更好
       this.getUser();
       this.getCartCount();
     }

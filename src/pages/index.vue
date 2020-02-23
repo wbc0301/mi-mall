@@ -120,7 +120,7 @@
         swiperOption:{
           autoplay:true,
           loop:true,
-          effect:'cube',
+          effect:'fade',
           cubeEffect: {
             shadowOffset: 100,
             shadowScale: 0.6

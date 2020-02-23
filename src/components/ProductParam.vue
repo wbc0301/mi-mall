@@ -25,11 +25,11 @@
       }
     },
     mounted(){
-      window.addEventListener('scroll',this.initHeight)
+      window.addEventListener('scroll',this.initHeight) // 添加吸顶功能
     },
     methods:{
       initHeight(){
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop; // 页面顶部滚动条的高度
         this.isFixed = scrollTop > 152? true:false;
       }
     },

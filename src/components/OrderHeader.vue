@@ -14,16 +14,16 @@
   </div>
 </template>
 <script>
-  import {mapState} from 'vuex'
-  export default{
-    name:'order-header',
-    props:{
-      title:String
-    },
-    computed:{
-      ...mapState(['username'])
-    },
-  }
+import { mapState } from 'vuex'
+export default {
+	name: 'order-header',
+	props: {
+		title: String
+	},
+	computed: {
+		...mapState(['username'])
+	},
+}
 </script>
 <style lang="scss">
   .order-header{

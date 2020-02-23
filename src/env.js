@@ -1,5 +1,5 @@
 let baseURL;
-switch (process.env.NODE_ENV) {
+switch (process.env.NODE_ENV) { // 根据环境不同输出不同的URL地址.
   case 'development':
     baseURL = 'http://dev-mall-pre.springboot.cn/api';
     break;
