@@ -12,7 +12,9 @@ import App from './App.vue'
 // mock开关
 const mock = false;
 if(mock){   // require 是动态加载  同步加载, false时不会加载,  import是静态 异步加载 不能写在 if 语句中.
+  console.log(1) // 同步加载 打印顺序：1  2  3 
   require('./mock/api');  // mock.js根本就没有发网络请求,是在代码层面进行的拦截.
+  console.log(3)
 }
 // 根据前端的跨域方式做调整 /a/b : /api/a/b => /a/b
 // axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5dc7afee2b69d9223b633cbb/mimall';

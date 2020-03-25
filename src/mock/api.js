@@ -11,3 +11,4 @@ Mock.mock('/api/user/login',{
     "updateTime": 1479048325000
   }
 });
+console.log(2)
