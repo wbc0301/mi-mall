@@ -8,7 +8,7 @@ import { Message } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store'
 import App from './App.vue'
-// import env from './env'
+import env from './env'
 // mock开关
 const mock = false;
 if(mock){   // require 是动态加载  同步加载, false时不会加载,  import是静态 异步加载 不能写在 if 语句中.
