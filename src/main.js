@@ -10,7 +10,7 @@ import store from './store'
 import App from './App.vue'
 import env from './env'
 // mock开关
-const mock = false;
+const mock = false; 
 if(mock){   // require 是动态加载  同步加载, false时不会加载,  import是静态 异步加载 不能写在 if 语句中.
   console.log(1) // 同步加载 打印顺序：1  2  3 
   require('./mock/api');  // mock.js根本就没有发网络请求,是在代码层面进行的拦截.
